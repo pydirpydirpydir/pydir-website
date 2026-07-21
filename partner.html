@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partner werden | PYDIR × Skunks – die Partner-Story</title>
+  <meta name="description" content="Die Geschichte von Skunks × PYDIR – und wie dein Shop das nächste Kapitel wird: Stelle Gutscheine für unsere Gewinner bereit und bekomme dein eigenes Marken-Ticket auf pydir.com." />
+  <link rel="canonical" href="https://pydir.com/partner" />
+  <meta name="theme-color" content="#0d0820" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pydir.com/partner" />
+  <meta property="og:site_name" content="PYDIR" />
+  <meta property="og:title" content="PYDIR × Skunks – die Partner-Story" />
+  <meta property="og:description" content="Ein Shop. Ein Spiel. Eine Stadt. Wie Skunks Partner #001 wurde – und dein Shop das nächste Kapitel wird." />
+  <meta property="og:image" content="https://pydir.com/og-image.png" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --purple: #6C5CE7; --purple-dark: #5A4BD1; --purple-light: #A29BFE;
+      --purple-bg: #F0EFFE; --ink: #0d0820; --text: #1a1040; --text-muted: #6b7280; --white: #ffffff;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: white; background: var(--ink); line-height: 1.6; }
+
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(13,8,32,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 70px; }
+    .nav-logo { display: flex; flex-direction: column; line-height: 1; text-decoration: none; }
+    .nav-logo .wordmark { font-size: 1.7rem; font-weight: 900; color: var(--purple-light); letter-spacing: -0.03em; }
+    .nav-logo .byline { font-size: 0.65rem; color: rgba(255,255,255,0.45); font-weight: 500; }
+    .nav-right { display: flex; align-items: center; gap: 16px; }
+    .nav-back { text-decoration: none; color: rgba(255,255,255,0.85); font-weight: 600; font-size: 0.9rem; }
+    .nav-back:hover { color: var(--purple-light); }
+    .lang-switcher { display: flex; align-items: center; background: rgba(255,255,255,0.1); border-radius: 999px; padding: 3px; gap: 2px; }
+    .lang-btn { border: none; background: transparent; cursor: pointer; font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 700; color: rgba(255,255,255,0.6); padding: 5px 12px; border-radius: 999px; transition: background 0.2s, color 0.2s; }
+    .lang-btn.active { background: var(--purple); color: white; }
+
+    .orb { position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none; z-index: 0; }
+    .orb-1 { width: 500px; height: 500px; background: radial-gradient(circle, rgba(108,92,231,0.25), transparent); top: -120px; left: -120px; animation: orbFloat 9s ease-in-out infinite; }
+    .orb-2 { width: 360px; height: 360px; background: radial-gradient(circle, rgba(162,155,254,0.18), transparent); bottom: -80px; right: -80px; animation: orbFloat 12s ease-in-out infinite reverse; }
+    @keyframes orbFloat { 0%,100%{transform:translate(0,0)} 50%{transform:translate(25px,-35px)} }
+
+    .hero { position: relative; overflow: hidden; padding: 110px 40px 90px; text-align: left; }
+    .hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+    .kicker { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--purple-light); margin-bottom: 32px; display: flex; align-items: center; gap: 14px; }
+    .kicker::before { content: ''; display: inline-block; width: 36px; height: 2px; background: var(--purple-light); }
+    .manifesto { display: flex; flex-direction: column; margin-bottom: 40px; }
+    .m-line { font-size: clamp(2.8rem, 8.5vw, 7rem); font-weight: 900; line-height: 0.95; letter-spacing: -0.03em; }
+    .m-dim { color: rgba(255,255,255,0.14); }
+    .m-bright { color: white; }
+    .m-accent { color: transparent; -webkit-text-stroke: 2px var(--purple-light); }
+    .hero-sub { font-size: 1.15rem; color: rgba(255,255,255,0.65); max-width: 520px; line-height: 1.7; margin-bottom: 40px; }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary { background: white; color: var(--ink); padding: 14px 30px; border-radius: 12px; text-decoration: none; font-weight: 800; font-size: 0.95rem; transition: transform 0.2s, box-shadow 0.2s; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(108,92,231,0.4); }
+    .btn-ghost { border: 1.5px solid rgba(255,255,255,0.3); color: white; padding: 14px 30px; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 0.95rem; transition: background 0.2s; }
+    .btn-ghost:hover { background: rgba(255,255,255,0.08); }
+
+    .chapter { position: relative; padding: 90px 40px; overflow: hidden; }
+    .chapter-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+    .chap-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--purple-light); margin-bottom: 14px; }
+    .chap-num { font-size: 5rem; font-weight: 900; color: rgba(108,92,231,0.18); line-height: 1; margin-bottom: 6px; }
+    .chap-title { font-size: clamp(1.7rem, 4vw, 2.6rem); font-weight: 900; letter-spacing: -0.02em; line-height: 1.12; margin-bottom: 18px; }
+    .chap-text { font-size: 1.05rem; color: rgba(255,255,255,0.62); max-width: 560px; line-height: 1.75; }
+
+    .ch1-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .tickets { display: flex; flex-direction: column; gap: 24px; }
+    .ticket { position: relative; display: flex; width: min(520px, 100%); min-height: 200px; border-radius: 20px; color: white; text-decoration: none; overflow: hidden; box-shadow: 0 10px 50px rgba(108,92,231,0.35); transition: transform 0.25s, box-shadow 0.25s; text-align: left; }
+    .ticket:hover { transform: translateY(-6px) rotate(-1deg); box-shadow: 0 18px 70px rgba(108,92,231,0.5); }
+    .ticket-stub { width: 104px; min-width: 104px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; border-right: 2px dashed rgba(255,255,255,0.35); position: relative; }
+    .ticket-stub::before, .ticket-stub::after { content: ''; position: absolute; right: -12px; width: 22px; height: 22px; border-radius: 50%; background: var(--ink); }
+    .ticket-stub::before { top: -11px; }
+    .ticket-stub::after { bottom: -11px; }
+    .ticket-no { writing-mode: vertical-rl; transform: rotate(180deg); font-weight: 900; letter-spacing: 0.22em; font-size: 0.75rem; opacity: 0.9; }
+    .ticket-x { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 0.55rem; font-weight: 600; letter-spacing: 0.14em; opacity: 0.55; }
+    .ticket-main { padding: 24px 26px; display: flex; flex-direction: column; gap: 9px; flex: 1; }
+    .ticket-tag { font-size: 0.85rem; line-height: 1.55; margin: 0; }
+    .ticket-badges { display: flex; flex-wrap: wrap; gap: 8px; }
+    .ticket-badges span { border-radius: 999px; padding: 4px 12px; font-size: 0.7rem; font-weight: 600; }
+    .ticket-cta { margin-top: auto; font-weight: 800; font-size: 0.9rem; }
+    .ticket-skunks { background: #F4F1EA; color: #141414; }
+    .ticket-skunks .ticket-stub { border-right: 2px dashed rgba(20,20,20,0.3); }
+    .ticket-skunks .ticket-no, .ticket-skunks .ticket-x { color: #141414; opacity: 0.85; }
+    .ticket-skunks .ticket-tag { color: #4a4a45; }
+    .ticket-skunks .ticket-badges span { border: 1px solid rgba(20,20,20,0.35); color: #141414; }
+    .ticket-skunks .ticket-cta { color: #F4F1EA; background: #141414; padding: 8px 18px; border-radius: 999px; align-self: flex-start; font-size: 0.82rem; }
+    .skunks-logo { height: 42px; width: auto; max-width: 190px; object-fit: contain; display: block; }
+    .skunks-wordmark { font-size: 1.8rem; font-weight: 900; letter-spacing: 0.14em; color: #141414; display: none; }
+    .ticket-ghost { background: rgba(108,92,231,0.05); border: 2px dashed rgba(162,155,254,0.5); color: white; box-shadow: none; }
+    .ticket-ghost .ticket-stub { border-right: 2px dashed rgba(162,155,254,0.4); }
+    .ticket-ghost .ticket-stub::before, .ticket-ghost .ticket-stub::after { background: var(--ink); }
+    .ticket-ghost .ticket-no, .ticket-ghost .ticket-x, .ticket-ghost .ticket-cta { color: var(--purple-light); }
+    .ticket-ghost .ticket-brand { font-size: 1.8rem; font-weight: 900; color: var(--purple-light); }
+    .ticket-ghost .ticket-tag { color: rgba(255,255,255,0.55); }
+
+    .flow { display: flex; align-items: stretch; gap: 16px; margin-top: 48px; flex-wrap: wrap; }
+    .flow-box { background: rgba(108,92,231,0.12); border: 1px solid rgba(108,92,231,0.3); border-radius: 20px; padding: 28px 24px; width: 250px; transition: background 0.3s; }
+    .flow-box:hover { background: rgba(108,92,231,0.2); }
+    .flow-ico { font-size: 2rem; margin-bottom: 12px; }
+    .flow-box p { font-weight: 700; font-size: 0.98rem; line-height: 1.45; color: white; margin: 0; }
+    .flow-arrow { align-self: center; font-size: 1.6rem; color: var(--purple-light); font-weight: 900; }
+    .flow-sum { margin-top: 26px; color: rgba(255,255,255,0.5); font-size: 0.95rem; }
+
+    .gain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: rgba(255,255,255,0.07); border-radius: 24px; overflow: hidden; margin-top: 48px; }
+    .gain { background: var(--ink); padding: 40px 32px; transition: background 0.3s; }
+    .gain:hover { background: rgba(108,92,231,0.13); }
+    .gain-ico { font-size: 1.7rem; margin-bottom: 10px; }
+    .gain h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 8px; }
+    .gain p { font-size: 0.875rem; color: rgba(255,255,255,0.5); line-height: 1.65; }
+
+    .strip { background: var(--purple); padding: 18px 0; overflow: hidden; }
+    .strip-track { display: flex; animation: ticker 20s linear infinite; white-space: nowrap; }
+    .strip-track span { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: rgba(255,255,255,0.9); padding: 0 24px; flex-shrink: 0; }
+    .strip-track .dot { color: rgba(255,255,255,0.4); padding: 0 4px; }
+    @keyframes ticker { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+    .finale { position: relative; overflow: hidden; padding: 100px 40px; }
+    .finale-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+    .faq-mini { max-width: 1100px; margin: 70px auto 0; position: relative; z-index: 1; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px 60px; }
+    .faq-mini div h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; color: var(--purple-light); }
+    .faq-mini div p { font-size: 0.9rem; color: rgba(255,255,255,0.55); line-height: 1.65; }
+    .cta-note { margin-top: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+    .cta-note a { color: #FFD166; }
+
+    footer { background: #090617; color: rgba(255,255,255,0.5); padding: 36px 40px; text-align: center; font-size: 0.85rem; border-top: 1px solid rgba(255,255,255,0.06); }
+    footer a { color: rgba(255,255,255,0.8); text-decoration: none; margin: 0 10px; }
+    footer a:hover { color: white; }
+
+    @media (max-width: 900px) {
+      .ch1-grid, .finale-grid { grid-template-columns: 1fr; gap: 44px; }
+      .faq-mini { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 720px) {
+      .flow { flex-direction: column; }
+      .flow-box { width: 100%; }
+      .flow-arrow { transform: rotate(90deg); align-self: flex-start; margin-left: 24px; }
+      .gain-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      nav { padding: 0 20px; }
+      .hero { padding: 80px 20px 60px; }
+      .chapter { padding: 64px 20px; }
+      .finale { padding: 70px 20px; }
+      .ticket-stub { width: 84px; min-width: 84px; }
+      .ticket-main { padding: 20px; }
+      .chap-num { font-size: 3.6rem; }
+    }
+    @media (max-width: 520px) { .nav-back { display: none; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <span class="wordmark">PYDIR</span>
+      <span class="byline">by J.B.N</span>
+    </a>
+    <div class="nav-right">
+      <a class="nav-back" href="/" data-i18n="nav_back">← Zur Startseite</a>
+      <div class="lang-switcher">
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 EN</button>
+        <button class="lang-btn active" id="btn-de" onclick="setLang('de')">🇩🇪 DE</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="hero-inner">
+      <div class="kicker" data-i18n="kicker">Partner-Story #001</div>
+      <div class="manifesto">
+        <span class="m-line m-dim" data-i18n="m1">EIN SHOP.</span>
+        <span class="m-line m-bright" data-i18n="m2">EIN SPIEL.</span>
+        <span class="m-line m-accent" data-i18n="m3">EINE STADT.</span>
+      </div>
+      <p class="hero-sub" data-i18n="hero_sub">Das ist die Geschichte von Skunks × PYDIR – und vielleicht der Anfang von deiner.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="mailto:support@pydir.com?subject=Partnerschaft%20mit%20PYDIR" data-i18n="hero_cta1">Schreib deine Story mit uns</a>
+        <a class="btn-ghost" href="#kapitel1" data-i18n="hero_cta2">Erst lesen ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="kapitel1">
+    <div class="chapter-inner">
+      <div class="ch1-grid">
+        <div>
+          <div class="chap-label" data-i18n="ch1_label">Kapitel 01</div>
+          <div class="chap-num">01</div>
+          <h2 class="chap-title" data-i18n="ch1_title">Zwei Teams, eine Stadt</h2>
+          <p class="chap-text" data-i18n="ch1_text">Skunks rettet Kleidung, bevor sie im Müll landet, und macht daraus Basics mit Charakter. Wir bauen ein Spiel, in dem Spieler jeden Monat echte Gutscheine gewinnen. Beide aus Bremen. Der Rest war ein Handschlag.</p>
+        </div>
+        <div class="tickets">
+          <a class="ticket ticket-skunks" href="https://skunks-shop.de/" target="_blank" rel="sponsored noopener">
+            <div class="ticket-stub">
+              <span class="ticket-no">PARTNER #001</span>
+              <span class="ticket-x">PYDIR ✕ SKUNKS</span>
+            </div>
+            <div class="ticket-main">
+              <div><img class="skunks-logo" src="https://skunks-shop.de/cdn/shop/files/Logo-removebg-preview_e59f09ad-4cc9-454f-8b52-232cd170affe.png?v=1748968053" alt="Skunks – nachhaltige Mode aus Bremen" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="skunks-wordmark">SKUNKS</span></div>
+              <p class="ticket-tag" data-i18n="sk_tag">Nachhaltige Unisex-Basics aus Bremen – Upcycling-Pieces mit Charakter.</p>
+              <div class="ticket-badges">
+                <span data-i18n="sk_b1">♻️ Upcycling-Mode</span>
+                <span data-i18n="sk_b2">📍 Bremen – wie wir</span>
+              </div>
+              <span class="ticket-cta" data-i18n="sk_cta">Zum Shop →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" style="padding-top: 40px;">
+    <div class="chapter-inner">
+      <div class="chap-label" data-i18n="ch2_label">Kapitel 02</div>
+      <div class="chap-num">02</div>
+      <h2 class="chap-title" data-i18n="ch2_title">So läuft die Partnerschaft</h2>
+      <div class="flow">
+        <div class="flow-box"><div class="flow-ico">🎁</div><p data-i18n="s1">Du stellst Gutscheine bereit</p></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><div class="flow-ico">🏆</div><p data-i18n="s2">Unsere Spieler gewinnen sie</p></div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-box"><div class="flow-ico">🛍️</div><p data-i18n="s3">Die Gewinner shoppen bei dir</p></div>
+      </div>
+      <p class="flow-sum" data-i18n="s_sum">Mehr ist es nicht. Design, Technik und Abwicklung übernehmen wir.</p>
+    </div>
+  </section>
+
+  <section class="chapter" style="padding-top: 40px;">
+    <div class="chapter-inner">
+      <div class="chap-label" data-i18n="ch3_label">Kapitel 03</div>
+      <div class="chap-num">03</div>
+      <h2 class="chap-title" data-i18n="ch3_title">Was dein Shop davon hat</h2>
+      <div class="gain-grid">
+        <div class="gain">
+          <div class="gain-ico">🎫</div>
+          <h3 data-i18n="g1_t">Dein Marken-Ticket</h3>
+          <p data-i18n="g1_p">Auf pydir.com, im Design deines Shops – mit direktem Link. Wie das Skunks-Ticket oben.</p>
+        </div>
+        <div class="gain">
+          <div class="gain-ico">🏆</div>
+          <h3 data-i18n="g2_t">Gewinner, jeden Monat</h3>
+          <p data-i18n="g2_p">Unsere Spieler halten echte Gutscheine in der Hand – und wollen sie bei dir ausgeben.</p>
+        </div>
+        <div class="gain">
+          <div class="gain-ico">📖</div>
+          <h3 data-i18n="g3_t">Deine Story, erzählt</h3>
+          <p data-i18n="g3_p">Lokal, nachhaltig, besonders – wir erzählen sie so, wie du sie gerade liest.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="strip-track">
+      <span data-i18n="t1">DEIN SHOP KÖNNTE HIER STEHEN</span><span class="dot">✦</span>
+      <span>PARTNER #002</span><span class="dot">✦</span>
+      <span data-i18n="t2">PYDIR ✕ DEIN NAME</span><span class="dot">✦</span>
+      <span data-i18n="t3">JEDEN MONAT NEUE GEWINNER</span><span class="dot">✦</span>
+      <span data-i18n="t1">DEIN SHOP KÖNNTE HIER STEHEN</span><span class="dot">✦</span>
+      <span>PARTNER #002</span><span class="dot">✦</span>
+      <span data-i18n="t2">PYDIR ✕ DEIN NAME</span><span class="dot">✦</span>
+      <span data-i18n="t3">JEDEN MONAT NEUE GEWINNER</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <section class="finale">
+    <div class="orb orb-2"></div>
+    <div class="finale-grid">
+      <div>
+        <div class="chap-label" data-i18n="ch4_label">Kapitel 04</div>
+        <div class="chap-num">04</div>
+        <h2 class="chap-title" data-i18n="ch4_title">Dieses Kapitel schreiben wir mit dir</h2>
+        <p class="chap-text" data-i18n="ch4_text">Schreib uns eine kurze Mail: wer ihr seid, was ihr verkauft. Antwort innerhalb von 24 Stunden.</p>
+        <div class="hero-ctas" style="margin-top: 28px;">
+          <a class="btn-primary" href="mailto:support@pydir.com?subject=Partnerschaft%20mit%20PYDIR">✉ support@pydir.com</a>
+        </div>
+        <p class="cta-note" data-i18n="cta_note">Oder nutz das <a href="/#contact">Kontaktformular auf der Startseite</a> – Thema „Partnership" wählen.</p>
+      </div>
+      <div class="tickets">
+        <div class="ticket ticket-ghost">
+          <div class="ticket-stub">
+            <span class="ticket-no">PARTNER #002</span>
+            <span class="ticket-x">PYDIR ✕ ?</span>
+          </div>
+          <div class="ticket-main">
+            <div class="ticket-brand" data-i18n="ghost_title">Dein Shop?</div>
+            <p class="ticket-tag" data-i18n="ghost_text">Dieses Ticket gestalten wir in deinem Markendesign – Logo, Farben, Story.</p>
+            <span class="ticket-cta" data-i18n="ghost_cta">Noch frei →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq-mini">
+      <div>
+        <h4 data-i18n="f1q">Was kostet es?</h4>
+        <p data-i18n="f1a">Sprich uns an – Konditionen klären wir individuell und fair. Keine versteckten Verpflichtungen.</p>
+      </div>
+      <div>
+        <h4 data-i18n="f2q">Wie viel Aufwand habe ich?</h4>
+        <p data-i18n="f2a">Fast keinen. Du lieferst Logo und Gutschein-Details – alles andere machen wir.</p>
+      </div>
+      <div>
+        <h4 data-i18n="f3q">Wie lange läuft es?</h4>
+        <p data-i18n="f3a">Flexibel. Keine langfristige Bindung.</p>
+      </div>
+      <div>
+        <h4 data-i18n="f4q">Wer spielt PYDIR?</h4>
+        <p data-i18n="f4a">Spieler aus ganz Deutschland, die jeden Monat um echte Gutscheine spielen. 100 % werbefrei – deine Gutscheine sind Gewinne, keine Werbung.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span data-i18n="footer_copy">© 2026 J.B.N UG · PYDIR</span> ·
+    <a href="/" data-i18n="footer_home">Startseite</a>
+    <a href="/#footer" data-i18n="footer_legal">Impressum &amp; Datenschutz</a>
+    <a href="mailto:support@pydir.com">support@pydir.com</a>
+  </footer>
+
+  <script>
+    const translations = {
+      de: {
+        nav_back: "← Zur Startseite",
+        kicker: "Partner-Story #001",
+        m1: "EIN SHOP.",
+        m2: "EIN SPIEL.",
+        m3: "EINE STADT.",
+        hero_sub: "Das ist die Geschichte von Skunks × PYDIR – und vielleicht der Anfang von deiner.",
+        hero_cta1: "Schreib deine Story mit uns",
+        hero_cta2: "Erst lesen ↓",
+        ch1_label: "Kapitel 01",
+        ch1_title: "Zwei Teams, eine Stadt",
+        ch1_text: "Skunks rettet Kleidung, bevor sie im Müll landet, und macht daraus Basics mit Charakter. Wir bauen ein Spiel, in dem Spieler jeden Monat echte Gutscheine gewinnen. Beide aus Bremen. Der Rest war ein Handschlag.",
+        sk_tag: "Nachhaltige Unisex-Basics aus Bremen – Upcycling-Pieces mit Charakter.",
+        sk_b1: "♻️ Upcycling-Mode",
+        sk_b2: "📍 Bremen – wie wir",
+        sk_cta: "Zum Shop →",
+        ch2_label: "Kapitel 02",
+        ch2_title: "So läuft die Partnerschaft",
+        s1: "Du stellst Gutscheine bereit",
+        s2: "Unsere Spieler gewinnen sie",
+        s3: "Die Gewinner shoppen bei dir",
+        s_sum: "Mehr ist es nicht. Design, Technik und Abwicklung übernehmen wir.",
+        ch3_label: "Kapitel 03",
+        ch3_title: "Was dein Shop davon hat",
+        g1_t: "Dein Marken-Ticket",
+        g1_p: "Auf pydir.com, im Design deines Shops – mit direktem Link. Wie das Skunks-Ticket oben.",
+        g2_t: "Gewinner, jeden Monat",
+        g2_p: "Unsere Spieler halten echte Gutscheine in der Hand – und wollen sie bei dir ausgeben.",
+        g3_t: "Deine Story, erzählt",
+        g3_p: "Lokal, nachhaltig, besonders – wir erzählen sie so, wie du sie gerade liest.",
+        t1: "DEIN SHOP KÖNNTE HIER STEHEN",
+        t2: "PYDIR ✕ DEIN NAME",
+        t3: "JEDEN MONAT NEUE GEWINNER",
+        ch4_label: "Kapitel 04",
+        ch4_title: "Dieses Kapitel schreiben wir mit dir",
+        ch4_text: "Schreib uns eine kurze Mail: wer ihr seid, was ihr verkauft. Antwort innerhalb von 24 Stunden.",
+        ghost_title: "Dein Shop?",
+        ghost_text: "Dieses Ticket gestalten wir in deinem Markendesign – Logo, Farben, Story.",
+        ghost_cta: "Noch frei →",
+        cta_note: "Oder nutz das <a href='/#contact'>Kontaktformular auf der Startseite</a> – Thema „Partnership\" wählen.",
+        f1q: "Was kostet es?",
+        f1a: "Sprich uns an – Konditionen klären wir individuell und fair. Keine versteckten Verpflichtungen.",
+        f2q: "Wie viel Aufwand habe ich?",
+        f2a: "Fast keinen. Du lieferst Logo und Gutschein-Details – alles andere machen wir.",
+        f3q: "Wie lange läuft es?",
+        f3a: "Flexibel. Keine langfristige Bindung.",
+        f4q: "Wer spielt PYDIR?",
+        f4a: "Spieler aus ganz Deutschland, die jeden Monat um echte Gutscheine spielen. 100 % werbefrei – deine Gutscheine sind Gewinne, keine Werbung.",
+        footer_copy: "© 2026 J.B.N UG · PYDIR",
+        footer_home: "Startseite",
+        footer_legal: "Impressum & Datenschutz"
+      },
+      en: {
+        nav_back: "← Back to homepage",
+        kicker: "Partner story #001",
+        m1: "ONE SHOP.",
+        m2: "ONE GAME.",
+        m3: "ONE CITY.",
+        hero_sub: "This is the story of Skunks × PYDIR — and maybe the beginning of yours.",
+        hero_cta1: "Write your story with us",
+        hero_cta2: "Read it first ↓",
+        ch1_label: "Chapter 01",
+        ch1_title: "Two teams, one city",
+        ch1_text: "Skunks rescues clothing before it ends up in the trash and turns it into basics with character. We build a game where players win real vouchers every month. Both from Bremen. The rest was a handshake.",
+        sk_tag: "Sustainable unisex basics from Bremen — upcycled pieces with character.",
+        sk_b1: "♻️ Upcycled fashion",
+        sk_b2: "📍 Bremen — just like us",
+        sk_cta: "Visit the shop →",
+        ch2_label: "Chapter 02",
+        ch2_title: "How the partnership works",
+        s1: "You provide vouchers",
+        s2: "Our players win them",
+        s3: "The winners shop at your store",
+        s_sum: "That's all. Design, tech and handling are on us.",
+        ch3_label: "Chapter 03",
+        ch3_title: "What your shop gets",
+        g1_t: "Your branded ticket",
+        g1_p: "On pydir.com, in your shop's design — with a direct link. Like the Skunks ticket above.",
+        g2_t: "Winners, every month",
+        g2_p: "Our players hold real vouchers in their hands — and want to spend them at your store.",
+        g3_t: "Your story, told",
+        g3_p: "Local, sustainable, special — we tell it the way you're reading this one.",
+        t1: "YOUR SHOP COULD BE HERE",
+        t2: "PYDIR ✕ YOUR NAME",
+        t3: "NEW WINNERS EVERY MONTH",
+        ch4_label: "Chapter 04",
+        ch4_title: "We write this chapter with you",
+        ch4_text: "Send us a short email: who you are, what you sell. Reply within 24 hours.",
+        ghost_title: "Your shop?",
+        ghost_text: "We design this ticket in your brand style — logo, colors, story.",
+        ghost_cta: "Still available →",
+        cta_note: "Or use the <a href='/#contact'>contact form on the homepage</a> — choose the topic \"Partnership\".",
+        f1q: "What does it cost?",
+        f1a: "Talk to us — we arrange the terms individually and fairly. No hidden obligations.",
+        f2q: "How much effort is it?",
+        f2a: "Almost none. You provide logo and voucher details — we do everything else.",
+        f3q: "How long does it run?",
+        f3a: "Flexible. No long-term commitment.",
+        f4q: "Who plays PYDIR?",
+        f4a: "Players from all across Germany competing every month for real vouchers. 100% ad-free — your vouchers are prizes, not ads.",
+        footer_copy: "© 2026 J.B.N UG · PYDIR",
+        footer_home: "Homepage",
+        footer_legal: "Legal & privacy"
+      }
+    };
+
+    function setLang(lang) {
+      const t = translations[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key] !== undefined) el.innerHTML = t[key];
+      });
+      document.documentElement.lang = lang;
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+    }
+  </script>
+
+</body>
+</html>
